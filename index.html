@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>TempConvert</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="main-box">
+
+        <div class="top-section">
+
+            <h1>
+                TempConvert
+            </h1>
+
+            <p class="main-text">
+                A soft and simple temperature converter
+            </p>
+
+        </div>
+
+        <div class="input-section">
+
+            <label class="section-label">
+                Enter Temperature
+            </label>
+
+            <input
+                type="number"
+                id="temperatureInput"
+                placeholder="Enter value"
+            >
+
+        </div>
+
+        <div class="input-section">
+
+            <label class="section-label">
+                Convert From
+            </label>
+
+            <select id="fromUnit">
+
+                <option value="celsius">
+                    Celsius
+                </option>
+
+                <option value="fahrenheit">
+                    Fahrenheit
+                </option>
+
+                <option value="kelvin">
+                    Kelvin
+                </option>
+
+            </select>
+
+        </div>
+
+        <div class="input-section">
+
+            <label class="section-label">
+                Convert To
+            </label>
+
+            <select id="toUnit">
+
+                <option value="fahrenheit">
+                    Fahrenheit
+                </option>
+
+                <option value="celsius">
+                    Celsius
+                </option>
+
+                <option value="kelvin">
+                    Kelvin
+                </option>
+
+            </select>
+
+        </div>
+
+        <div class="result-section">
+
+            <p class="result-label">
+                Converted Result
+            </p>
+
+            <h2 class="result-number">
+                00.0
+            </h2>
+
+            <p class="result-text">
+                Normal Temperature
+            </p>
+
+        </div>
+
+        <div class="button-section">
+
+            <button class="convert-btn">
+                Convert
+            </button>
+
+            <button class="reset-btn">
+                Reset
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
