@@ -8,13 +8,6 @@
 body {
     min-height: 100vh;
 
-    background:
-        linear-gradient(
-            to bottom right,
-            #f5f1ea,
-            #ece4d9
-        );
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,6 +15,36 @@ body {
     padding: 20px;
 
     transition: 0.4s;
+}
+
+body.cold-theme {
+
+    background:
+        linear-gradient(
+            to bottom right,
+            #dcefff,
+            #b8dfff
+        );
+}
+
+body.normal-theme {
+
+    background:
+        linear-gradient(
+            to bottom right,
+            #f5f1ea,
+            #ece4d9
+        );
+}
+
+body.hot-theme {
+
+    background:
+        linear-gradient(
+            to bottom right,
+            #ffd8c2,
+            #ffb38a
+        );
 }
 
 .main-box {
@@ -122,6 +145,13 @@ h1 {
     padding: 26px;
 
     text-align: center;
+
+    transition: 0.3s;
+}
+
+.result-section:hover {
+
+    transform: translateY(-2px);
 }
 
 .result-label {
