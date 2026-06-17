@@ -115,7 +115,35 @@ convertBtn.onclick = function () {
         "hot-theme"
     );
 
-    if (convertedValue < 15) {
+    let temperatureInCelsius;
+
+    if (toUnit.value === "celsius") {
+
+        temperatureInCelsius =
+            convertedValue;
+
+    }
+
+    else if (
+        toUnit.value === "fahrenheit"
+    ) {
+
+        temperatureInCelsius =
+            (convertedValue - 32)
+            * 5/9;
+
+    }
+
+    else {
+
+        temperatureInCelsius =
+            convertedValue - 273.15;
+
+    }
+
+    if (
+        temperatureInCelsius < 15
+    ) {
 
         document.body.classList.add(
             "cold-theme"
@@ -130,8 +158,8 @@ convertBtn.onclick = function () {
     }
 
     else if (
-        convertedValue >= 15 &&
-        convertedValue <= 30
+        temperatureInCelsius >= 15 &&
+        temperatureInCelsius <= 30
     ) {
 
         document.body.classList.add(
